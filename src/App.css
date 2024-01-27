@@ -1,16 +1,15 @@
-
-  #root {
-    font-family: serif;
-  }
-
-  .container-fluid {
-    width: 100%;
-    padding-right: 50px;
-    padding-left: 50px;
-    margin-right: auto;
-    margin-left: auto;
+#root {
+  font-family: serif;
 }
-.logonamefooter{
+
+.container-fluid {
+  width: 100%;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.logonamefooter {
   font-size: 2rem;
   font-weight: 700;
   font-family: serif;
@@ -18,11 +17,48 @@
   text-decoration: none;
 }
 
-.btn-outline-success:hover {
-  color: #fff;
-  background-color: #2127f3;
+/* .btn-outline-success:hover {
+  color: #2c46b6;
+  background-color: #fff;
   border-color: #2c46b6;
+} */
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #fff !important;
+  border-color: #007bff;
 }
+input.form-control.mr-sm-1.border {
+  border-color: #007bff !important;
+  color: black !important;
+}
+
+a.btn.btn-outline-secondary.mr-2.logincss {
+  border-color: #007bff;
+  font-weight: 600;
+  color: #2c46b6;
+}
+a.btn.btn-outline-secondary.mr-2.sigincss {
+  border-color: #007bff;
+  font-weight: 600;
+  color: #2c46b6;
+}
+
+a.btn.btn-outline-secondary.mr-2.logincss:hover {
+  /* color: #007bff; */
+  /* background-color: #fff;
+  color: #0d1b93; */
+  background-color: #0d1b93;
+  color: #fff;
+}
+a.btn.btn-outline-secondary.mr-2.sigincss:hover {
+  /* color: #007bff; */
+  /* background-color: #fff;
+  color: #0d1b93; */
+  background-color: #0d1b93;
+  color: #fff;
+}
+
 a.navbar-brand.navlogcss:hover {
   color: #0d1b93;
   font-weight: 700;
@@ -67,4 +103,3 @@ p.pricecss.card-text {
   font-weight: 600;
   color: #13137d;
 }
-

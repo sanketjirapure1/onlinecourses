@@ -1,5 +1,8 @@
 import {useState} from 'react';
 import {Link, NavLink} from 'react-router-dom';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faShoppingCart, faSearch} from '@fortawesome/free-solid-svg-icons';
+import {faBook} from '@fortawesome/free-solid-svg-icons';
 
 export default function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -19,7 +22,7 @@ export default function Header() {
           <nav className="navbar navbar-light">
             <form className="form-inline">
               <input
-                className="form-control mr-sm-1"
+                className="form-control mr-sm-1 border"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
@@ -27,7 +30,11 @@ export default function Header() {
               <button
                 className="btn btn-outline-primary my-1 my-sm-0"
                 type="submit">
-                Search
+                <FontAwesomeIcon
+                  icon={faSearch}
+                  className="mr-1"
+                  style={{color: '#007bff'}}
+                />
               </button>
             </form>
           </nav>
@@ -48,7 +55,19 @@ export default function Header() {
                   to="/courses"
                   className="nav-link navlinkcss"
                   onClick={toggleMenu}>
-                  Courses
+                  <FontAwesomeIcon
+                    icon={faBook}
+                    className="mr-1"
+                    style={{color: '#d49533'}}
+                  />
+                  <span
+                    style={{
+                      color: '#2c46b6',
+                      fontWeight: 600,
+                      fontSize: 17,
+                    }}>
+                    Courses
+                  </span>
                 </NavLink>
               </li>
 
@@ -57,15 +76,28 @@ export default function Header() {
                   to="/carts"
                   className="nav-link navlinkcss"
                   onClick={toggleMenu}>
-                  Cart
+                  <FontAwesomeIcon
+                    icon={faShoppingCart}
+                    className="mr-1"
+                    style={{color: '#d49533'}}
+                  />
+
+                  <span
+                    style={{
+                      color: '#2c46b6',
+                      fontWeight: 600,
+                      fontSize: 17,
+                    }}>
+                    Cart
+                  </span>
                 </NavLink>
               </li>
             </ul>
             <div className="navbar-text">
-              <Link to="#" className="btn btn-outline-secondary mr-2">
+              <Link to="#" className="btn btn-outline-secondary mr-2 logincss">
                 Log in
               </Link>
-              <Link to="#" className="btn btn-outline-secondary mr-2">
+              <Link to="#" className="btn btn-outline-secondary mr-2 sigincss">
                 Sigin Up
               </Link>
             </div>
