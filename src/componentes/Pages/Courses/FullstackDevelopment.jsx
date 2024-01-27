@@ -1,6 +1,6 @@
 import {Row, Col} from 'react-bootstrap';
 import CourseCard from './CourseCard';
-const Courses = () => {
+const FullstackDevelopment = () => {
   const courses = [
     {
       title: 'React.js',
@@ -104,7 +104,7 @@ const Courses = () => {
   return (
     <div className="container-fluid">
       <div className="mt-4">
-        <h1>All Categories Type Courses</h1>
+        <h1>All Fullstck Development Courses</h1>
         <h4>Explore a world of knowledge with our diverse range of courses.</h4>
       </div>
 
@@ -119,4 +119,4 @@ const Courses = () => {
   );
 };
 
-export default Courses;
+export default FullstackDevelopment;

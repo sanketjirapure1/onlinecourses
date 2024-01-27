@@ -3,6 +3,7 @@ import {Link, NavLink} from 'react-router-dom';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faShoppingCart, faSearch} from '@fortawesome/free-solid-svg-icons';
 import {faBook} from '@fortawesome/free-solid-svg-icons';
+import {NavDropdown} from 'react-bootstrap';
 
 export default function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -50,7 +51,7 @@ export default function Header() {
             className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`}
             id="navbarNav">
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <NavLink
                   to="/courses"
                   className="nav-link navlinkcss"
@@ -69,6 +70,50 @@ export default function Header() {
                     Courses
                   </span>
                 </NavLink>
+              </li> */}
+
+              <li className="nav-item">
+                <NavDropdown
+                  as={Link}
+                  to="/courses"
+                  title={
+                    <span>
+                      <FontAwesomeIcon
+                        icon={faBook}
+                        className="mr-1"
+                        style={{color: '#d49533'}}
+                      />
+                      <span
+                        style={{
+                          color: '#2c46b6',
+                          fontWeight: 600,
+                          fontSize: 17,
+                        }}>
+                        Courses
+                      </span>
+                    </span>
+                  }
+                  id="basic-nav-dropdown"
+                  className="nav-link navlinkcss">
+                  {/* Link each item to a specific route */}
+                  <NavDropdown.Item as={Link} to="/webdevelopment">
+                    Web Development
+                  </NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/fullstack">
+                    Fullstack Development
+                  </NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/androiddevelopment">
+                    Android Development
+                  </NavDropdown.Item>
+
+                  <NavDropdown.Item as={Link} to="/devops">
+                    Devops Development
+                  </NavDropdown.Item>
+
+                  <NavDropdown.Item as={Link} to="/aidevelopment">
+                    AI / Machine Development
+                  </NavDropdown.Item>
+                </NavDropdown>
               </li>
 
               <li className="nav-item">
