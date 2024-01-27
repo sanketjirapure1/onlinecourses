@@ -13,7 +13,7 @@ export default function Header() {
       <nav className="navbar navbar-expand-lg navbar-light bg-white border-gray-200 px-4 lg:px-6 py-2.5">
         <div className="container-fluid">
           <Link to="/" className="navbar-brand navlogcss">
-            OnlineCourses
+            Online Courses
           </Link>
 
           <nav className="navbar navbar-light">
