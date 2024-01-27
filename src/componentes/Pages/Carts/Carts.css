@@ -1,0 +1,50 @@
+.shopping-cart-container {
+  width: 80%;
+  margin: auto;
+}
+
+.cart-table {
+  width: 100%;
+}
+
+.quantity-input {
+  width: 40px;
+}
+
+.cart-summary {
+  margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .shopping-cart-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .cart-table {
+    font-size: 14px;
+  }
+
+  .quantity-input {
+    width: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .form-inline {
+    display: none;
+  }
+}
+
+@media (min-width: 999px) {
+  .form-inline {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+}

@@ -1,0 +1,70 @@
+
+  #root {
+    font-family: serif;
+  }
+
+  .container-fluid {
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.logonamefooter{
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: serif;
+  color: #0d1b93;
+  text-decoration: none;
+}
+
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: #2127f3;
+  border-color: #2c46b6;
+}
+a.navbar-brand.navlogcss:hover {
+  color: #0d1b93;
+  font-weight: 700;
+  font-size: 2rem;
+}
+a.navbar-brand.navlogcss {
+  color: #2230b0;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.navlinkcss {
+  color: #2230b0;
+}
+
+/* CourseCard.css */
+
+.course-card {
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.course-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+/* cardinstructor */
+
+p.instructcss.card-text {
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+p.descriptioncss.card-text {
+  margin-bottom: 0.3rem;
+  line-height: 1.2rem;
+}
+.titlecss.card-title.h5 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+p.pricecss.card-text {
+  font-weight: 600;
+  color: #13137d;
+}
+
