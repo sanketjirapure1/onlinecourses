@@ -1,28 +1,17 @@
-import React, {lazy, Suspense} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {RouterProvider, createBrowserRouter} from 'react-router-dom';
+// import App from './App.jsx';
 import './App.css';
 import './index.css';
-
-const Layout = lazy(() => import('./Layout.jsx'));
-const Home = lazy(() => import('./componentes/Pages/Home/Home.jsx'));
-const Carts = lazy(() => import('./componentes/Pages/Carts/Carts.jsx'));
-const FullstackDevelopment = lazy(() =>
-  import('./componentes/Pages/Courses/FullstackDevelopment.jsx'),
-);
-const AndroidDevelopment = lazy(() =>
-  import('./componentes/Pages/Courses/AndroidDevelopment.jsx'),
-);
-const DevopsDevelopment = lazy(() =>
-  import('./componentes/Pages/Courses/DevopsDevelopment.jsx'),
-);
-const WebDevelopment = lazy(() =>
-  import('./componentes/Pages/Courses/WebDevelopment.jsx'),
-);
-const AiDevelopments = lazy(() =>
-  import('./componentes/Pages/Courses/AiDevelopments.jsx'),
-);
-
+import {RouterProvider, createBrowserRouter} from 'react-router-dom';
+import Layout from './Layout.jsx';
+import Home from './componentes/Pages/Home/Home.jsx';
+import Carts from './componentes/Pages/Carts/Carts.jsx';
+import FullstackDevelopment from './componentes/Pages/Courses/FullstackDevelopment.jsx';
+import AndroidDevelopment from './componentes/Pages/Courses/AndroidDevelopment.jsx';
+import DevopsDevelopment from './componentes/Pages/Courses/DevopsDevelopment.jsx';
+import AiDevelopments from './componentes/Pages/Courses/AiDevelopments.jsx';
+import WebDevelopment from './componentes/Pages/Courses/WebDevelopment.jsx';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -33,9 +22,11 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
+        // path:'courses',
         path: '/webdevelopment',
         element: <WebDevelopment />,
       },
+
       {
         path: '/androiddevelopment',
         element: <AndroidDevelopment />,
@@ -52,6 +43,7 @@ const router = createBrowserRouter([
         path: '/aidevelopment',
         element: <AiDevelopments />,
       },
+
       {
         path: 'carts',
         element: <Carts />,
@@ -60,16 +52,8 @@ const router = createBrowserRouter([
   },
 ]);
 
-const App = () => (
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
-);
-
-const rootElement = document.getElementById('root');
-
-ReactDOM.createRoot(rootElement).render(
-  <Suspense fallback={<div></div>}>
-    <App />
-  </Suspense>,
+  </React.StrictMode>,
 );
