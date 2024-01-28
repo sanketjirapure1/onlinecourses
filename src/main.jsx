@@ -12,8 +12,7 @@ import AndroidDevelopment from './componentes/Pages/Courses/AndroidDevelopment.j
 import DevopsDevelopment from './componentes/Pages/Courses/DevopsDevelopment.jsx';
 import AiDevelopments from './componentes/Pages/Courses/AiDevelopments.jsx';
 import WebDevelopment from './componentes/Pages/Courses/WebDevelopment.jsx';
-// sanket ///
-// aaa
+
 const router = createBrowserRouter([
   {
     path: '/',
