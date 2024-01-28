@@ -22,29 +22,23 @@
   }
 
   .cart-table {
-    font-size: 14px;
+    font-size: 11px;
   }
 
   .quantity-input {
     width: 30px;
   }
+  h1.carthaeding {
+    font-size: 26px;
 }
-
-@media (max-width: 767px) {
-  .form-inline {
-    display: none;
+.btn-danger {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+  .btn {
+    font-size: 0.7rem;
   }
 }
 
-@media (min-width: 999px) {
-  .form-inline {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    -ms-flex-align: center;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-  }
-}
+

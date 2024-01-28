@@ -17,11 +17,6 @@
   text-decoration: none;
 }
 
-/* .btn-outline-success:hover {
-  color: #2c46b6;
-  background-color: #fff;
-  border-color: #2c46b6;
-} */
 
 .btn-outline-primary:hover {
   color: #fff;
@@ -34,27 +29,26 @@ input.form-control.mr-sm-1.border {
 }
 
 a.btn.btn-outline-secondary.mr-2.logincss {
+
   border-color: #007bff;
   font-weight: 600;
   color: #2c46b6;
+  font-size: 14px;
+  width: 65px;
 }
 a.btn.btn-outline-secondary.mr-2.sigincss {
   border-color: #007bff;
   font-weight: 600;
+  font-size: 14px;
   color: #2c46b6;
+  width: 78px;
 }
 
 a.btn.btn-outline-secondary.mr-2.logincss:hover {
-  /* color: #007bff; */
-  /* background-color: #fff;
-  color: #0d1b93; */
   background-color: #0d1b93;
   color: #fff;
 }
 a.btn.btn-outline-secondary.mr-2.sigincss:hover {
-  /* color: #007bff; */
-  /* background-color: #fff;
-  color: #0d1b93; */
   background-color: #0d1b93;
   color: #fff;
 }
@@ -111,6 +105,8 @@ p.pricecss.card-text {
   padding: 0;
 }
 
+
+
 /* card css */
 
 .card-img-top {
@@ -133,3 +129,50 @@ p.pricecss.card-text {
   border-radius: 0.25rem;
   height: 370px;
 }
+
+@media (max-width: 767px) {
+  .form-inline {
+    display: none !important;
+  } 
+}
+a.navbar-brand.navlogcss {
+  color: #2230b0;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+
+.form-inline {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.navbar-text {
+  display: flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  flex-wrap: nowrap;
+}
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  font-size: 14px;
+}
+
+
+
+
+

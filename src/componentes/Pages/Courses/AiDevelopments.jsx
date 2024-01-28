@@ -104,7 +104,7 @@ const AiDevelopments = () => {
   return (
     <div className="container-fluid">
       <div className="mt-4">
-        <h1>All AI / Machin Learning Development Courses</h1>
+        <h1>All AI Development Courses</h1>
         <h4>Explore a world of knowledge with our diverse range of courses.</h4>
       </div>
 

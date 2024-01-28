@@ -31,7 +31,7 @@ const Carts = () => {
 
   return (
     <div className="shopping-cart-container">
-      <h1>Shopping Cart</h1>
+      <h1 className='carthaeding'>Shopping Cart</h1>
       <Table striped bordered hover className="cart-table">
         <thead>
           <tr>

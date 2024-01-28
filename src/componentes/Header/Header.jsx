@@ -17,7 +17,7 @@ export default function Header() {
       <nav className="navbar navbar-expand-lg navbar-light bg-white border-gray-200 px-4 lg:px-6 py-2.5">
         <div className="container-fluid">
           <Link to="/" className="navbar-brand navlogcss">
-            Online Courses
+            OnlineCourses
           </Link>
 
           <nav className="navbar navbar-light">
@@ -81,14 +81,16 @@ export default function Header() {
                       <FontAwesomeIcon
                         icon={faBook}
                         className="mr-1"
-                        style={{color: '#d49533'}}
+                        style={{color: '#d49533',fontSize: 11}}
                       />
                       <span
+// className="navheading"
                         style={{
                           color: '#2c46b6',
                           fontWeight: 600,
-                          fontSize: 17,
-                        }}>
+                          fontSize: 15,
+                        }}
+                        >
                         Courses
                       </span>
                     </span>
@@ -98,6 +100,10 @@ export default function Header() {
                   {/* Link each item to a specific route */}
                   <NavDropdown.Item as={Link} to="/webdevelopment">
                     Web Development
+                  </NavDropdown.Item>
+                  
+                  <NavDropdown.Item as={Link} to="/aidevelopment">
+                    AI Development
                   </NavDropdown.Item>
                   <NavDropdown.Item as={Link} to="/fullstack">
                     Fullstack Development
@@ -110,9 +116,6 @@ export default function Header() {
                     Devops Development
                   </NavDropdown.Item>
 
-                  <NavDropdown.Item as={Link} to="/aidevelopment">
-                    AI / Machine Development
-                  </NavDropdown.Item>
                 </NavDropdown>
               </li>
 
@@ -124,15 +127,18 @@ export default function Header() {
                   <FontAwesomeIcon
                     icon={faShoppingCart}
                     className="mr-1"
-                    style={{color: '#d49533'}}
+                    style={{color: '#d49533',fontSize: 11}}
                   />
 
                   <span
+               
                     style={{
                       color: '#2c46b6',
                       fontWeight: 600,
-                      fontSize: 17,
-                    }}>
+                      fontSize: 15,
+                    }}
+                    
+                    >
                     Cart
                   </span>
                 </NavLink>
