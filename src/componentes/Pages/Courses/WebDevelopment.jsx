@@ -1,10 +1,12 @@
 import {Row, Col} from 'react-bootstrap';
 import CourseCard from './CourseCard';
+// import coursesData from '../../../courses.json'; 
 const WebDevelopment = () => {
   const courses = [
     {
       title: 'React.js',
       description: 'Description of the course. Lorem ipsum dolor .',
+      instructor: 'hitesh chaudhary',
       imageSrc:
         '/src/assets/closeup-freelancer-learning-online-while-using-laptop-office_637285-6405.png',
       price: 3500,
@@ -12,6 +14,7 @@ const WebDevelopment = () => {
     {
       title: 'HTML/CSS',
       description: 'Description of the course. Lorem ipsum dolor .',
+      instructor: 'hitesh chaudhary',
       imageSrc:
         '/src/assets/closeup-freelancer-learning-online-while-using-laptop-office_637285-6405.png',
       price: 3500,
@@ -19,6 +22,7 @@ const WebDevelopment = () => {
     {
       title: 'FullStack',
       description: 'Description of the course. Lorem ipsum dolor .',
+      instructor: 'hitesh chaudhary',
       imageSrc:
         '/src/assets/closeup-freelancer-learning-online-while-using-laptop-office_637285-6405.png',
       price: 3500,
@@ -26,6 +30,7 @@ const WebDevelopment = () => {
     {
       title: 'Javascript',
       description: 'Description of the course. Lorem ipsum dolor .',
+      instructor: 'hitesh chaudhary',
       imageSrc:
         '/src/assets/closeup-freelancer-learning-online-while-using-laptop-office_637285-6405.png',
       price: 3500,
@@ -33,6 +38,7 @@ const WebDevelopment = () => {
     {
       title: 'Python',
       description: 'Description of the course. Lorem ipsum dolor .',
+      instructor: 'hitesh chaudhary',
       imageSrc:
         '/src/assets/closeup-freelancer-learning-online-while-using-laptop-office_637285-6405.png',
       price: 3500,
@@ -40,6 +46,7 @@ const WebDevelopment = () => {
     {
       title: 'Java',
       description: 'Description of the course. Lorem ipsum dolor .',
+      instructor: 'hitesh chaudhary',
       imageSrc:
         '/src/assets/closeup-freelancer-learning-online-while-using-laptop-office_637285-6405.png',
       price: 3500,
@@ -47,6 +54,7 @@ const WebDevelopment = () => {
     {
       title: 'BigData ',
       description: 'Description of the course. Lorem ipsum dolor .',
+      instructor: 'hitesh chaudhary',
       imageSrc:
         '/src/assets/closeup-freelancer-learning-online-while-using-laptop-office_637285-6405.png',
       price: 3500,
@@ -54,6 +62,7 @@ const WebDevelopment = () => {
     {
       title: 'MongoDB',
       description: 'Description of the course. Lorem ipsum dolor .',
+      instructor: 'hitesh chaudhary',
       imageSrc:
         '/src/assets/closeup-freelancer-learning-online-while-using-laptop-office_637285-6405.png',
       price: 3500,
@@ -61,6 +70,7 @@ const WebDevelopment = () => {
     {
       title: 'Node.js',
       description: 'Description of the course. Lorem ipsum dolor .',
+      instructor: 'hitesh chaudhary',
       imageSrc:
         '/src/assets/closeup-freelancer-learning-online-while-using-laptop-office_637285-6405.png',
       price: 3500,
@@ -68,6 +78,7 @@ const WebDevelopment = () => {
     {
       title: 'Android',
       description: 'Description of the course. Lorem ipsum dolor .',
+      instructor: 'hitesh chaudhary',
       imageSrc:
         '/src/assets/closeup-freelancer-learning-online-while-using-laptop-office_637285-6405.png',
       price: 3500,
@@ -75,6 +86,7 @@ const WebDevelopment = () => {
     {
       title: '.NET',
       description: 'Description of the course. Lorem ipsum dolor .',
+      instructor: 'hitesh chaudhary',
       imageSrc:
         '/src/assets/closeup-freelancer-learning-online-while-using-laptop-office_637285-6405.png',
       price: 3500,
@@ -82,6 +94,7 @@ const WebDevelopment = () => {
     {
       title: 'C#',
       description: 'Description of the course. Lorem ipsum dolor .',
+      instructor: 'hitesh chaudhary',
       imageSrc:
         '/src/assets/closeup-freelancer-learning-online-while-using-laptop-office_637285-6405.png',
       price: 3500,
@@ -89,6 +102,7 @@ const WebDevelopment = () => {
     {
       title: 'C++',
       description: 'Description of the course. Lorem ipsum dolor .',
+      instructor: 'hitesh chaudhary',
       imageSrc:
         '/src/assets/closeup-freelancer-learning-online-while-using-laptop-office_637285-6405.png',
       price: 3500,
@@ -96,11 +110,13 @@ const WebDevelopment = () => {
     {
       title: 'Sql',
       description: 'Description of the course. Lorem ipsum dolor .',
+      instructor: 'hitesh chaudhary',
       imageSrc:
         '/src/assets/closeup-freelancer-learning-online-while-using-laptop-office_637285-6405.png',
       price: 3500,
     },
   ];
+  // const courses = coursesData;
   return (
     <div className="container-fluid">
       <div className="mt-4">
@@ -110,7 +126,8 @@ const WebDevelopment = () => {
 
       <Row className="mt-4">
         {courses.map((course, index) => (
-          <Col md={3} key={index}>
+          <Col sm={6} md={4} xl={3} key={index}>
+          {/* // <Col md={3} key={index}> */}
             <CourseCard {...course} />
           </Col>
         ))}

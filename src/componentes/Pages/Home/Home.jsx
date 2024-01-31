@@ -1,121 +1,8 @@
 import {Row, Col, Carousel} from 'react-bootstrap';
 import CourseCard from '../Courses/CourseCard';
-
+import coursesData from '../../../courses.json';
 const Home = () => {
-  const courses = [
-    {
-      title: 'React.js',
-      description: 'Description of the course. Lorem ipsum dolor .',
-      instructor: 'hitesh chaudhary',
-      imageSrc:
-        '/src/assets/closeup-freelancer-learning-online-while-using-laptop-office_637285-6405.png',
-      price: 3500,
-    },
-    {
-      title: 'HTML/CSS',
-      description: 'Description of the course. Lorem ipsum dolor .',
-      instructor: 'hitesh chaudhary',
-      imageSrc:
-        '/src/assets/closeup-freelancer-learning-online-while-using-laptop-office_637285-6405.png',
-      price: 3500,
-    },
-    {
-      title: 'FullStack',
-      description: 'Description of the course. Lorem ipsum dolor .',
-      instructor: 'hitesh chaudhary',
-      imageSrc:
-        '/src/assets/closeup-freelancer-learning-online-while-using-laptop-office_637285-6405.png',
-      price: 3500,
-    },
-    {
-      title: 'Javascript',
-      description: 'Description of the course. Lorem ipsum dolor .',
-      instructor: 'hitesh chaudhary',
-      imageSrc:
-        '/src/assets/closeup-freelancer-learning-online-while-using-laptop-office_637285-6405.png',
-      price: 3500,
-    },
-    {
-      title: 'Python',
-      description: 'Description of the course. Lorem ipsum dolor .',
-      instructor: 'hitesh chaudhary',
-      imageSrc:
-        '/src/assets/closeup-freelancer-learning-online-while-using-laptop-office_637285-6405.png',
-      price: 3500,
-    },
-    {
-      title: 'Java',
-      description: 'Description of the course. Lorem ipsum dolor .',
-      instructor: 'hitesh chaudhary',
-      imageSrc:
-        '/src/assets/closeup-freelancer-learning-online-while-using-laptop-office_637285-6405.png',
-      price: 3500,
-    },
-    {
-      title: 'BigData ',
-      description: 'Description of the course. Lorem ipsum dolor .',
-      instructor: 'hitesh chaudhary',
-      imageSrc:
-        '/src/assets/closeup-freelancer-learning-online-while-using-laptop-office_637285-6405.png',
-      price: 3500,
-    },
-    {
-      title: 'MongoDB',
-      description: 'Description of the course. Lorem ipsum dolor .',
-      instructor: 'hitesh chaudhary',
-      imageSrc:
-        '/src/assets/closeup-freelancer-learning-online-while-using-laptop-office_637285-6405.png',
-      price: 3500,
-    },
-    {
-      title: 'Node.js',
-      description: 'Description of the course. Lorem ipsum dolor .',
-      instructor: 'hitesh chaudhary',
-      imageSrc:
-        '/src/assets/closeup-freelancer-learning-online-while-using-laptop-office_637285-6405.png',
-      price: 3500,
-    },
-    {
-      title: 'Android',
-      description: 'Description of the course. Lorem ipsum dolor .',
-      instructor: 'hitesh chaudhary',
-      imageSrc:
-        '/src/assets/closeup-freelancer-learning-online-while-using-laptop-office_637285-6405.png',
-      price: 3500,
-    },
-    {
-      title: '.NET',
-      description: 'Description of the course. Lorem ipsum dolor .',
-      instructor: 'hitesh chaudhary',
-      imageSrc:
-        '/src/assets/closeup-freelancer-learning-online-while-using-laptop-office_637285-6405.png',
-      price: 3500,
-    },
-    {
-      title: 'C#',
-      description: 'Description of the course. Lorem ipsum dolor .',
-      instructor: 'hitesh chaudhary',
-      imageSrc:
-        '/src/assets/closeup-freelancer-learning-online-while-using-laptop-office_637285-6405.png',
-      price: 3500,
-    },
-    {
-      title: 'C++',
-      description: 'Description of the course. Lorem ipsum dolor .',
-      instructor: 'hitesh chaudhary',
-      imageSrc:
-        '/src/assets/closeup-freelancer-learning-online-while-using-laptop-office_637285-6405.png',
-      price: 3500,
-    },
-    {
-      title: 'Sql',
-      description: 'Description of the course. Lorem ipsum dolor .',
-      instructor: 'hitesh chaudhary',
-      imageSrc:
-        '/src/assets/closeup-freelancer-learning-online-while-using-laptop-office_637285-6405.png',
-      price: 3500,
-    },
-  ];
+  const courses = coursesData;
   return (
     <>
       <Carousel>
@@ -144,9 +31,9 @@ const Home = () => {
 
       <div className="container-fluid">
         <div className="mt-4">
-          <h1>Get Certified, Get Ahead with Our Programs</h1>
+          <h1 className='homeheading'>Get Certified, Get Ahead with Our Programs</h1>
 
-          <h4>
+          <h4 className='secondheading'>
             Learn from global experts and get certified by the world's leading
             universities
           </h4>
@@ -154,7 +41,7 @@ const Home = () => {
 
         <Row className="mt-4">
           {courses.map((course, index) => (
-            <Col md={3} key={index}>
+            <Col sm={6} md={4} xl={3} key={index}>
               <CourseCard {...course} />
             </Col>
           ))}

@@ -10,6 +10,7 @@ const Carts = () => {
     {id: 4, title: 'React.js', price: 3000, quantity: 1, rating: 4.5},
   ]);
 
+
   const removeFromCart = id => {
     const updatedCart = cartItems.filter(item => item.id !== id);
     setCartItems(updatedCart);

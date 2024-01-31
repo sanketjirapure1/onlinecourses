@@ -56,7 +56,7 @@ a.btn.btn-outline-secondary.mr-2.sigincss:hover {
 a.navbar-brand.navlogcss:hover {
   color: #0d1b93;
   font-weight: 700;
-  font-size: 2rem;
+  /* font-size: 2rem; */
 }
 a.navbar-brand.navlogcss {
   color: #2230b0;
@@ -135,6 +135,35 @@ p.pricecss.card-text {
     display: none !important;
   } 
 }
+
+@media (max-width: 768px) {
+  h1.homeheading {
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1;
+  }
+  h4.secondheading {
+    font-size: 1.6rem;
+}
+}
+
+@media (max-width: 480px) {
+  h1.homeheading {
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1;
+  }
+  h4.secondheading {
+    font-size: 1.3rem;
+}
+}
+
+
+
+
+
 a.navbar-brand.navlogcss {
   color: #2230b0;
   font-weight: 700;
