@@ -160,18 +160,12 @@ p.pricecss.card-text {
 }
 .container-fluid {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
   margin-right: auto;
   margin-left: auto;
 }
 }
-
-
-
-
-
-
 
 a.navbar-brand.navlogcss {
   color: #2230b0;
