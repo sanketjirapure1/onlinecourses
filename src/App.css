@@ -158,7 +158,16 @@ p.pricecss.card-text {
   h4.secondheading {
     font-size: 1.3rem;
 }
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
+}
+
+
 
 
 
